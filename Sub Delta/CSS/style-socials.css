@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.nav-bar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: rgb(45, 45, 45);
+    padding: 15px;
+}
+
+.nav-bar a{
+    width: 20px; 
+    height: 20px;
+}
+
+
+.nav-bar a img{   
+    width: 100%;
+}
+
+.nav{
+    width: fit-content;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+    font-size: 1rem;
+    padding: 19px 15px;
+}
+
+.nav ul li a:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 19px 15px;
+    transition-duration: 0.4s;
+    background-color: black;
+}
+
+.nav ul li .active{
+    color: white;
+    background-color:black;
+}
+
+.github{
+    position: fixed;
+    display: flex;
+    right: 0px;
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+    padding: 20px 68px 20px 15px;
+    align-items: center;
+}
+
+.github:hover{
+    color:white;
+    background-color: black;
+    transition-duration: 0.4s;
+    
+}
+
+.main-body{
+    margin-top: 60px;
+    background-color: rgb(45, 45, 45);
+}
+
+.main-body .title{  
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    font-size: 3rem;
+    color: #fff9ea;
+}
+
+.main-body .logo-container{
+    display: flex;
+    margin: 2rem auto 0rem auto;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-body .logo-container a{
+    margin: 1rem auto;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-body .logo-container a .logo{
+    width: 90%;
+}
+
+.main-body .logo-container a .logo:hover{
+    background-color: #fff9ea;
+    transition-duration: 0.3s;
+}
+
+#logo1{
+    animation: slide2 1.5s ease 1;   
+}
+
+#logo2{
+    animation: slide2 1.5s ease 1;
+}
+
+#logo3{
+    animation: slide1 1.5s ease 1;
+}
+
+#logo4{
+    animation: slide1 1.5s ease 1;
+}
+
+@keyframes slide1{
+    from{
+        margin-left: 100%;
+        filter: opacity(0%);
+    }
+    to{
+        margin-left: 0%;
+        filter: opacity(100%);
+    }
+}
+
+@keyframes slide2{
+    from{
+        margin-right: 100%;
+        filter: opacity(0%);
+    }
+    to{
+        margin-right: 0%;
+        filter: opacity(100%);
+    }
+}
+
+.inq-form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff9ea;
+    padding: 2rem;
+}
+
+.inq-form .text-wrap{
+    width: 20%;
+}
+
+.inq-form p{
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+.inq-form form{
+    width: min-content;
+}
+
+.inq-form form .input{
+    margin-bottom: 2rem;
+    padding: 0.4rem 0.4rem;
+    background-color: #fff9ea;
+    border: 2px solid black;
+    width: 500px;
+    font-family: "Poppins";
+}
+
+.inq-form form textarea{
+    background-color: #fff9ea;  
+    margin-bottom: 2rem;
+    padding: 0.4rem 0.4rem;
+    border: 2px solid black;
+    width: 500px;
+    font-family: "Poppins";
+}
+
+.inq-form form .submit{
+    background-color: #fff9ea;
+    padding: 0.7rem 2rem;
+    align-self: center;
+    border: 2px solid black;
+    font-size: 1rem;
+}
+
+.inq-form form .submit:hover{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.feedback{
+    text-align: center;
+    background-color: rgb(45, 45, 45);
+    padding: 2rem 0;
+    align-items: center;
+    color: #fff9ea;
+}
+
+.feedback button{
+    margin: 1rem;
+    padding: 5px 8px;
+    border: 2px solid #fff9ea;
+    background-color: rgb(45, 45, 45);
+    color: #fff9ea;
+    width: 30px;
+    height: 30px;
+    transition-duration: 0.3s; 
+}
+
+.feedback button:hover{
+    margin: 0.58rem;
+    padding: 5px 8px;
+    border: 2px solid #fff9ea;
+    background-color: rgb(45, 45, 45);
+    color: #fff9ea;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+
+}
+
+.feedback div{
+    padding: 0.7rem;
+}
+
+.feedback input{
+    background-color: #fff9ea;
+    padding: 0.7rem 2rem;
+    align-self: center;
+    border: 2px solid black;
+    font-size: 1rem;
+}
+
+.feedback input:hover{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    transition-duration: 0.4s;
+    border: 2px solid #fff9ea;
+}
+
+footer{
+    text-align: center;
+    color: #ffaec8;
+    background-color: rgb(45, 45, 45);
+    border-top: 1px solid grey;
+    font-size: large;
+    padding: 3px;
+}

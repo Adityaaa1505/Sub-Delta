@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.nav-bar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: rgb(45, 45, 45);
+    padding: 15px;
+}
+
+.nav-bar a{
+    width: 20px; 
+    height: 20px;
+}
+
+
+.nav-bar a img{   
+    width: 100%;
+}
+
+.nav{
+    width: fit-content;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+    font-size: 1rem;
+    padding: 19px 15px;
+}
+
+.nav ul li a:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 19px 15px;
+    transition-duration: 0.4s;
+    background-color: black;
+}
+
+.nav ul li .active{
+    color: white;
+    background-color:black;
+}
+
+.github{
+    position: fixed;
+    display: flex;
+    right: 0px;
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+    padding: 20px 68px 20px 15px;
+    align-items: center;
+}
+
+.github:hover{
+    color:white;
+    background-color: black;
+    transition-duration: 0.4s;
+    
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    background-color: rgb(45, 45, 45);
+}
+
+.logo-text img{
+    width: 12.5%;
+    margin: 6% auto;
+    animation: glow 3s ease infinite;
+}
+
+@keyframes glow{
+    0%, 100%{
+        filter: brightness(60%);
+    }
+    10%, 90%{
+        filter: brightness(70%);
+    }
+    20%, 80%{
+        filter: brightness(80%);
+    }
+    30%, 70%{
+        filter: brightness(90%);
+    }
+    40%, 60%{
+        filter: brightness(100%);
+    }
+    50%{
+        filter: brightness(110%);
+    }
+}
+
+.changing-text{
+    color: #ffaec8;
+    margin: 3% auto;
+    font-size: 3rem;
+    font-family: "Roboto Mono";
+}
+
+.changing-text::after{
+    content: "";
+    animation: change 2s linear infinite;
+}
+
+@keyframes change{
+    0%{content: "% a& A@    i^@a";}
+    4%{content: "I am Adi$&a";}
+
+    8%, 12%, 16%, 20%, 24%{content: "I am Aditya";}
+
+    28%{content: "I +m! A^i$ya";}
+    32%{content: "?</ a: A|%#";}
+    36%{content: ") li!@ %o *($@^&";}
+    40%{content: "I li#e to c&@e";}
+
+    44%, 48%, 52%, 56%, 60%{content: "I like to code";}
+
+    64%{content: "# &i!e t# 0*de";}
+    68%{content: "@#$% ^*% @#$ta";}
+    72%{content: "#$d!@t i^ De#$%";}
+    76%{content: "Ind*&t in De@ta";}
+
+    80%, 84%, 88%, 92%, 96%{content: "Induct in Delta?";}
+
+    100%{content: "n%@ct !n ^&*ta";}
+}
+
+.mid{
+    background-color: #fff9ea;
+    display: grid;
+    grid-template-areas: 
+    "text1 img1"
+    "img2 text2";
+    align-items: center;
+    gap: 2em;
+    row-gap: 5em;
+    padding: 2%;
+}
+
+.who-we-are{
+    width: 90%;
+    grid-area: img1;
+}
+
+.who-we-are-info{
+    grid-area: text1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.who-we-are-info div, .what-we-do-info div{
+    font-weight: 400;
+    font-size: 2rem;    
+}
+
+.who-we-are-info p, .what-we-do-info p{ 
+    font-size: 1rem;
+    font-weight: 250;
+}
+
+.who-we-are-info a, .what-we-do-info a{ 
+    font-family: "Poppins";
+    background-color: fff9ea;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    border-radius:7px;
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: 250;
+    transition-duration: 0.3s;
+}
+.who-we-are-info a:hover, .what-we-do-info a:hover{ 
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+.what-we-do{
+    width: 90%;
+    grid-area: img2;
+}
+
+.what-we-do-info{
+    grid-area: text2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+    color: #ffaec8;
+    background-color: rgb(45, 45, 45);
+    border-top: 1px solid grey;
+    font-size: large;
+    padding: 3px;
+}
