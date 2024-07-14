@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub Delta | Socials</title>
+    <link rel="stylesheet" href="CSS/style-socials.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <header class="nav-bar">
+            <a href="index.html"><img src="Images\deltaLogoWhite.png" alt="Aditya Logo"></a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="socials.html" class="active">Socials</a></li>
+                    <li><a href="projects.html">Projects</a></li>  
+                      
+                </ul>
+            </nav>
+            <a href="https://github.com/" target="_blank" class="github">Github<img class="github-logo" src="Images/github.png" alt=""></a>
+        </header>        
+
+        <div class="main-body">
+            <div class="title">Let's Get In Touch</div>
+            <div class="logo-container">
+                <a href="#"><img src="Images/instagram.png" alt="" class="logo" id="logo1"></a>
+                <a href="#"><img src="Images/facebook.png" alt="" class="logo" id="logo2"></a>
+                <a href="#"><img src="Images/email.png" alt="" class="logo" id="logo3"></a>
+                <a href="#"><img src="Images/twitter.png" alt="" class="logo" id="logo4"></a>
+            </div>
+        </div>
+
+        <div class="inq-form">
+            <div class="text-wrap">
+                <h2>Inquiries:</h2>
+                <p>Fill out the form on the right if you have any inquiries and we will get back to you soon.</p>
+                <p>Please check your spam folder for our response</p>
+            </div>
+
+            <form>
+                <div>Name: *</div>
+                <input class="input" type="text" name="name">
+                <div>Email: *</div>
+                <input class="input" type="email" name="email">
+                <div>Inquiries: *</div>
+                <textarea class="input" name="inquiry" cols="50" rows="5"></textarea>
+                <input class="submit" id="submit-inq" type="button" value="Submit"> 
+            </form>
+        </div>
+
+        <div class="feedback" id="feedback-box">How would you rate your experience: <button class="feedback-btn" id="btn1">1</button><button class="feedback-btn" id="btn2">2</button><button class="feedback-btn" id="btn3">3</button><button class="feedback-btn" id="btn4">4</button><button class="feedback-btn" id="btn5">5</button>
+            <div id="options"></div>
+        </div>
+    
+        <footer class="love">Made with ❤️ by Aditya<br>Inspired with ❤️ by Bish</footer>
+    </div>
+
+</body>
+    <script src="JS\script-socials.js"></script>
+</html>
